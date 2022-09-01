@@ -1,24 +1,39 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Great Vibes', cursive;;
+    --fonte3: 'Oleo Script Swash Caps', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
+
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
-    background-color: black;
+    background-color: #000000;
+    background-image: linear-gradient(to top, #000000, #808080);
     color: azure;
     text-align: center;
+    
 }
 
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte3);
+    font-size: 10vw;
 }
 
 header > p {
@@ -40,6 +55,9 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte2);
+    font-weight: bold;
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -53,7 +71,8 @@ section.imagem {
 }
  
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.464);
 }
 
